@@ -1,0 +1,161 @@
+/*: seudo selectores*/
+/*Almacenar variables custon propeti*/
+:root {
+    --blanco: #ffffff;
+    --oscuro: #212121;
+    --primario: #ffc107;
+    --secundario: #0097A7;
+    --gris: #757575;
+   
+    --fuente-principal: 3.8rem;
+   }
+   
+   
+   html{
+       font-size: 62.5%;
+   }
+   
+   body {
+      font-size: 16px;/* 1 rem = 10px*/
+      font-family: 'Fira Sans Condensed', sans-serif;
+   }
+   
+  
+   
+   /*h1.titulo span {
+       font-size: 2rem;
+       color:blue;
+   }+/
+   
+   /*Especificidad*/
+   /*.titulo span {
+       font-size: 2rem;
+       color: red;
+   }*/
+   
+   /*
+   ¿Qué es Especificidad?
+   --Es como el navegador va a
+   mostrar el CSS de acuerdo a
+   que tan específico es el 
+   Selector que hemos creado
+   
+   CSS es en cascada, eso no significa que si  un
+   selector aparece después será tomado en cuenta
+   sino más bien su especificidad
+   */
+   
+   .contenedor {
+       
+       margin-top: 0;
+       /*Margen a la derecha*/
+       /* margin-right: auto;
+       margin-bottom: 0;+/
+       /*Margen izquierda*/
+       /*margin-left: auto;*/
+      /* margin: 0 auto 0 auto;*/
+       /*El primero es el de arriva y aabajo*/
+       /*El segundo es el de la izquierda y derecha*/
+       margin:0 auto;
+   /*
+   Los margenes van a decirnos
+   en que posición se va colocar un elemento
+   */
+   }
+   
+   
+   /*
+   Display block o Display Inline
+   
+   Algunos elementos se muestran de una forma y otros de otra
+   Todos los elementos en HTML ya tienen un display por default
+   
+   Display: block;
+   Significa que el elemento se colocará uno debajo del otro sin importar su tamaño
+   
+   Display inline
+   Significa que el elmento se posicionará a la derecha una vez que haya tomado el 
+   espacio que requiere
+   
+   Ningun elemento tiene un 
+   displa: flex; o display: grid; por
+   default
+   
+   No es necesario especificar un display para cada elemento, salvo
+   que deses modificar el viene por default
+   
+   */
+   
+   
+   .encabezado {
+       background-color: var(--secundario);
+
+       height: 10rem;
+   }
+
+    
+   
+   @media (min-width: 780px) {
+         
+   .encabezado {
+  
+    height: 9rem;
+
+ 
+    }
+   }
+
+
+
+   
+   .encabezado-principal {
+   /*Hacer el lemento más alto*/
+   padding: 1rem .5rem;
+   display: flex;
+ 
+ 
+ 
+   display: flex;
+   justify-content: space-between;
+
+
+
+ 
+   }
+   
+   @media (min-width: 780px) {
+         
+    .encabezado-principal  {
+      
+     }
+    }
+
+   
+   .encavezado-principal-nav a {
+       max-width: 120rem;
+       display: flex;
+       flex-direction: column;
+       /*align-items: center;*/
+       /*align-items: flex-end*/
+       align-items: flex-start;
+       color: var(--blanco);
+       text-decoration: none;
+       /*display: block;*/
+   }
+
+  
+ 
+
+
+
+   .nav-enlace {
+     margin-bottom: 1rem;
+
+   }
+
+   .titulo {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--blanco);
+    /*font-family: 'Krub', sans-serif;*/
+   }
